@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cozzal.partner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".feature.owner.payment.OwnerDetailPaymentActivity"
+            android:theme="@style/AppTheme.NoActionBarWhite"/>
+        <activity
+            android:name=".feature.owner.calendar.MultiCalendarActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".feature.cleaner.CleanerMainActivity" />
+        <activity
+            android:name=".feature.owner.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarWhite"></activity>
+        <activity
+            android:name=".feature.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".extension.firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".extension.firebase.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".feature.admin.AdminMainActivity" />
+        <activity
+            android:name=".feature.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBarWhite" />
+    </application>
+
+</manifest>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ll"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_SF_Pro_Display_Bold
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cozzal Partner"
+            android:textSize="24sp"
+            android:textColor="#3b3b3b"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_notifications_none_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:id="@+id/ll2"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_margin="19.3dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="19.2dp"
+                android:orientation="horizontal"
+                >
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.3sp"
+                        android:text="Pendapatan"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextViewSFProDisplayRegular
+                            android:id="@+id/icon_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="10sp"
+                            android:textColor="#6e7f8d"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <customfonts.MyTextView_SF_Pro_Display_Semibold
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.3sp"
+                        android:text="$5,291.20"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <customfonts.TextViewSFProDisplayRegular
+                            android:id="@+id/percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(0.3%) $21.67"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="10sp"
+
+                            android:textColor="#17b978"/>
+
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/arrow"-->
+                            <!--android:layout_width="10dp"-->
+                            <!--android:layout_height="10dp"-->
+                            <!--android:src="@drawable/ic_arrowup"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginLeft="7dp"-->
+                            <!--/>-->
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+            </lecho.lib.hellocharts.view.LineChartView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <customfonts.MyTextView_SF_Pro_Display_Semibold
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginRight="8dp"
+                android:text="Pengeluaran"
+                android:textColor="#3b3b3b"
+                android:textSize="12sp"/>
+
+            <customfonts.MyTextView_SF_Pro_Display_Semibold
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/rect_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:gravity="center"
+                android:text="   Pendapatan   "
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+
+            <customfonts.MyTextView_SF_Pro_Display_Semibold
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:paddingBottom="7.5dp"
+                android:text="Data Booking"
+                android:textColor="#3b3b3b"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ll3"
+        android:layout_below="@id/ll2"
+        android:orientation="horizontal">
+
+        <customfonts.MyTextView_SF_Pro_Display_Bold
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penawaran Harga"
+            android:textSize="18sp"
+            android:textColor="#3b3b3b"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/empty"/>
+
+            <customfonts.MyTextView_SF_Pro_Display_Semibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Saat ini belum ada penawaran harga"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

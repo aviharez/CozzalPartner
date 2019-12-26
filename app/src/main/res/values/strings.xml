@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cozzal Partner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wrong">Something went wrong</string>
+    <string name="accept_json">application/json</string>
+    <string name="error">Unknown error</string>
+    <string name="no_internet">Check your internet connection</string>
+</resources>

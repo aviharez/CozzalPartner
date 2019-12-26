@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#118df0</color>
+    <color name="colorPrimaryDark">#0D76CA</color>
+    <color name="colorAccent">#FFEB3B</color>
+
+    <color name="PAID">#00B873</color>
+    <color name="UNPAID">#E91E63</color>
+    <color name="Waiting">#F68159</color>
+    <color name="colorGrey">#a9a9b0</color>
+</resources>
